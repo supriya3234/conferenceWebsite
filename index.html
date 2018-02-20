@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ICB 2019</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ 
+  <style>
+
+/**/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 70%;
+    min-width: 100%; 
+    min-height: 100%;
+	width:100%;
+	z-index: 1;
+}
+
+.titleBlock {
+ 	margin:0 auto;
+    position: fixed;
+    bottom: 75%;
+    right: 30%;
+    left:25%;
+    /*background: rgba(0, 0, 0, 0.5);*/
+    background: transparent;
+    color: #f1f1f1;
+    width:50%;
+    z-index: 1;
+
+}
+
+#title>h1{
+font-size:34px;
+font-weight: bold;
+}
+
+#title>p{
+font-size:18px;
+}
+
+
+#myBtn {
+    width: 20px;
+    font-size: 12px;
+    border: none;
+    /*background: #000;*/
+	background:none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+	    border: none;
+
+}
+
+/**/
+
+.navbar{
+background-color:transparent; 
+border-color:transparent;
+color: #f1f1f1 !important;
+font-weight: bold;
+}
+
+
+.navbar-default .navbar-nav>li>a{
+color: #f1f1f1 !important;
+font-size:16px;
+font-weight: bold;
+}
+
+.navbar-default .navbar-brand {
+color: #f1f1f1 !important;
+font-weight: bold;
+}
+
+
+/**/
+
+
+
+.container{
+/*background: lightblue url("image1.jpg") no-repeat fixed center;*/
+	padding-top : 100px;  
+    z-index: -1;
+
+}
+
+
+	.panel-transparent {
+			background: none;
+		}
+
+	.panel-transparent .panel-header{
+	    z-index: -1;
+        background: none !important;
+		padding-top: 10px;
+		padding-bottoms: 10px;
+
+    }
+	
+    .panel-transparent .panel-body{
+	    z-index: -1;
+        background: none !important;
+		padding-top: 10px;
+		
+    }
+
+
+	.panel-default {
+		border: none;
+		z-index: -1;
+	}
+
+h4{
+font-weight: bold;
+
+}
+
+#datesBlock{
+height: 280px;
+overflow-y:auto;
+}
+
+#newsBlock{
+height: 280px;
+overflow-y:auto;
+}
+
+#newsBlock li>h6{
+font-weight: bold;
+}
+
+#newsList
+{
+text-align:left;
+}
+
+#impDates{
+text-align: left;
+width: 100%;
+}
+
+#impDates tr:nth-child(odd){
+background-color: #f2f2f2;
+}
+
+#impDates tr:hover {
+background-color: #ddd;
+}
+
+
+#impDates td, #impDates th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#impDates th{
+    background-color: #4CAF50;
+    color:white;
+}
+
+
+</style>
+
+</head>
+<body>
+
+
+<div class="container text-center">
+
+<nav class="navbar navbar-default navbar-fixed-top" >
+
+  <div class="container-fluid" id="navbar">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ICB 2019</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">About
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="about.html">Important Dates</a></li>
+          <li><a href="about.html#divNews">News and Updates</a></li>
+          <li><a href="#">Organization</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Submissions</a></li>
+      <li><a href="#">Programs</a></li>
+    </ul>
+  </div>
+</nav>
+ 
+<video  autoplay="autoplay" loop="loop" muted="muted" id="myVideo">
+  <source src="video2.mp4" type="video/mp4">
+  <source src="video2.webm" type="video/webm">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="titleBlock" id="title">
+  <h1>ICB 2019</h1>
+  <p> The 12<sup>th</sup> IAPR International Conference On Biometrics</p>
+  <p> 22-28 June | Crete, Greece</p>
+   <!--<button id="myBtn" onclick="myFunction()"><span class="glyphicon glyphicon-pause"></span></button>-->
+</div>
+
+<div class="container">
+	<div class="panel panel-default panel-transparent">
+	   <div class="panel-header  w3-container w3-center w3-animate-zoom">
+		   <p>The 11th IAPR International Conference on Biometrics (ICB 2018), technically co-sponsored by 
+		   IAPR (Technical Committee on Biometrics – TC4, International Association for Pattern Recognition), IEEE (Biometrics Council),  
+		   and APRS (Australian Pattern Recognition Society), is the premier forum for the presentation of new advances and research results 
+		   in the fields of biometrics. In the year 2018, we are proud to present this event in one of the most beautiful places in Australia.
+		   </p>
+	   </div>
+  
+	   <div class="panel-body">
+			<div class="row">
+					  <div class="col-sm-6  w3-container w3-center w3-animate-zoom"  id="datesBlock">
+						    <h4>Key Dates</h4>
+							<table id="impDates">
+								<tr>
+									<td>4 January, 2018</td>
+									<td>Call for Tutorials and Special Sessions Due</td>
+								</tr>
+								<tr>
+									<td>1 November 2017</td>
+									<td>Conference Early Bird Registration</td>
+								</tr>								
+								<tr>
+									<td>4 January, 2018</td>
+									<td>Tutorials</td>
+								</tr>								
+								<tr>
+									<td>20 February 2018</td>
+									<td>Main Conference Dates</td>
+								</tr>								
+								<tr>
+									<td>4 January, 2018</td>
+									<td>Call for Tutorials and Special Sessions Due</td>
+								</tr>								
+								<tr>
+									<td>14 December, 2017</td>
+									<td>Notification to Authors</td>
+								</tr>																
+							</table>
+					  </div>
+					  
+					  <div class="col-sm-6 w3-container w3-center w3-animate-zoom"  id="newsBlock">
+						 <h4>Latest Updates</h4>	
+									 
+						 <ul id="newsList">
+							<li>
+								<h6>Rebuttal period is closed.</h6>
+								<p> Please check other important dates</p>
+							</li>
+							<li>
+								<h6>Paper reviews are available now.</h6>
+								<p> Paper reviews can be viewed through the CVPR 2018 CMT website <a href="#">(link).</a> <br>
+									Rebuttal deadline is January 25, 2018 [11:59 p.m]. <br>
+									Please follow the example in the rebuttal kit <a href="#">(link).</a> </p>
+							</li>
+							<li>
+								<h6>Rebuttal period is still open.</h6>
+								<p> Please check other important dates</p>
+							</li>
+								  	  				  	 				  	 
+						 </ul>
+					  </div>
+			  </div> 
+	  </div> 
+	</div>
+</div>
+
+
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "<span class=\"glyphicon glyphicon-pause\"></span>";
+  } else {
+    video.pause();
+    btn.innerHTML = "<span class=\"glyphicon glyphicon-play\"></span>";
+  }
+}
+</script>
+</body>
+</html>
